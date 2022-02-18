@@ -45,7 +45,7 @@ def play_turn(board, hole):
     print("\n")
     print_board(board)
     time.sleep(0.5)
-    return newHole
+    return newHole - 1
 
 def board_init():
     board = [0, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4]
@@ -68,7 +68,7 @@ def game_play(board):
         else:
             print("Player 2 turn")
         hole = choose_hole(board)
-        while board[hole] != 0 and hole != 0 and hole != 7:
+        while board[hole] != 1 and hole != 0 and hole != 7:
             hole = play_turn(board, hole)
         playerTurn = not playerTurn
     wins_check(board)
