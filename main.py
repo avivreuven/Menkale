@@ -1,16 +1,21 @@
-# This is a sample Python script.
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def printBoard(board):
+    print("Player2      6         5         4         3         2         1      Player1")
+    print("|-----|   |-----|   |-----|   |-----|   |-----|   |-----|   |-----|   |-----|")
+    print("|     |   |     |   |     |   |     |   |     |   |     |   |     |   |     |")
+    print("|     |   | ", board[6], " |   | ", board[5], " |   | ", board[4], " |   | ", board[3], " |   | ", board[2],
+          " |   | ", board[1], " |   |     |")
+    print("|     |   |     |   |     |   |     |   |     |   |     |   |     |   |     |")
+    print("| ", board[7], " |   -------   -------   -------   -------   -------   -------   | ", board[0], " |")
+    print("|     |   |     |   |     |   |     |   |     |   |     |   |     |   |     |")
+    print("|     |   | ", board[8], " |   | ", board[9], " |   | ", board[10], " |   | ", board[11], " |   | ",
+          board[12], " |   | ", board[13], " |   |     |")
+    print("|     |   |     |   |     |   |     |   |     |   |     |   |     |   |     |")
+    print("|-----|   |-----|   |-----|   |-----|   |-----|   |-----|   |-----|   |-----|")
+    print("Player2      7         8         9        10        11        12      Player1")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+board = [0, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4]
+printBoard(board)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
