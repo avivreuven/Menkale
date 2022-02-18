@@ -68,8 +68,10 @@ def game_play(board):
         else:
             print("Player 2 turn")
         hole = choose_hole(board)
-        while board[hole] != 1 and hole != 0 and hole != 7:
+        while hole != 0 and hole != 7:
             hole = play_turn(board, hole)
+            if board[hole] == 1:
+                break
         playerTurn = not playerTurn
     wins_check(board)
 
